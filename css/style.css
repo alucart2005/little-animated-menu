@@ -1,1 +1,32 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body ul {
+  position: relative;
+  display: flex;
+  gap: 25px;
+}
+body ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */
