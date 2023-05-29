@@ -15,7 +15,7 @@ body {
 body ul {
   position: relative;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 body ul li {
   position: relative;
