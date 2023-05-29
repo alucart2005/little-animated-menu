@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-size: 11px;
 }
 
 body {
@@ -28,5 +29,36 @@ body ul li {
   justify-content: center;
   align-items: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+body ul li ion-icon {
+  font-size: 16px;
+}
+body ul li:hover {
+  width: 150px;
+  box-shadow: 0 5px 15px rgba(179, 64, 177, 0.9);
+}
+body ul li:hover::before {
+  opacity: 1;
+}
+body ul li:hover::after {
+  opacity: 0.5;
+}
+body ul li:hover ion-icon {
+  transform: scale(0);
+  color: #fff;
+  transition-delay: 0.25s;
+}
+body ul li:hover .title {
+  font-size: 16px;
+  font-weight: 500;
+}
+body ul li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
   transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

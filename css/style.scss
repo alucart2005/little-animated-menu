@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-size: 11px;
 }
 body{
   display: flex;
@@ -26,6 +27,38 @@ body{
       align-items: center;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       transition: 0.5s;
+      ion-icon{
+        font-size: 16px;
+      }
+      &:hover{
+        width: 150px;
+        box-shadow: 0 5px 15px rgba(179, 64, 177, 0.9);
+        &::before{
+          opacity: 1;
+        }
+        &::after{
+          opacity: 0.5;
+        }
+        ion-icon{
+          transform: scale(0);
+          color: #fff;
+          transition-delay: 0.25s;
+        }
+        .title{
+          font-size: 16px;
+          font-weight: 500;
+        }
+      } 
+      &::before{
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 60px;
+        background: linear-gradient(45deg, var(--i), var(--j));
+        opacity: 0;
+        transition: 0.5s;
+
+      }
     }
   }
 }
